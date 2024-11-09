@@ -93,16 +93,17 @@ We are going to add MLFlow tracking only from step 3.
 
     ```mlflow server --host 127.0.0.1 --port 8080```
 2. Lets import the library and create an experiments for grouping data.
-   ```python
-    # Import the library
-    import mlflow
+``python
+# Import the library
+import mlflow
 
-    # Connect to the MLflow server (in this case, we are using our own computer)
-    mlflow.set_tracking_uri(uri="http://localhost:8080")
+# Connect to the MLflow server (in this case, we are using our own computer)
+mlflow.set_tracking_uri(uri="http://localhost:8080")
 
-    # Set the tracking experiment (in this case, House Prices is going to be our experiment name)
-    mlflow.set_experiment("PythonBCN 2024")
-    ```
+# Set the tracking experiment (in this case, House Prices is going to be our experiment name)
+mlflow.set_experiment("PythonBCN 2024")
+```
+
 3. Register the model by starting a mlflow_run :point_right: Lets see code!
 
 # References
